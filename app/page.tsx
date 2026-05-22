@@ -15,7 +15,7 @@ export default async function BlogPage() {
                     <div className="grid gap-6">
                         {posts.length === 0 ? (
                             <div className="rounded-3xl border border-white/10 bg-slate-950/70 p-10 text-center text-slate-400">
-                                No posts available yet. Create the first post in the blog database.
+                                No posts available yet. Create the first post in the blog database.ss
                             </div>
                         ) : (
                             posts.map((post: any) => (
