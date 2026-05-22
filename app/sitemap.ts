@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import getBlogModel from '@/src/models/Post';
+import getBlogModel from '@/models/Post';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';

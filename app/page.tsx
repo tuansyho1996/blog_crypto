@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import getBlogModel from '@/src/models/Post';
+import getBlogModel from '@/models/Post';
 
 export default async function BlogPage() {
     const Blog = await getBlogModel();

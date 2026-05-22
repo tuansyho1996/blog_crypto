@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import getBlogModel from '@/src/models/Post';
+import getBlogModel from '@/models/Post';
 
 interface BlogPageProps {
     params: { slug: string };

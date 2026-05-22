@@ -1,5 +1,5 @@
 import { Schema } from 'mongoose';
-import dbBlogConnect from '@/src/lib/mongodbBlog';
+import dbBlogConnect from '@/lib/mongodbBlog';
 
 export interface IPost {
     title: string;
