@@ -1,5 +1,22 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import getBlogModel from '@/models/Post';
+import { absoluteUrl, siteConfig } from '@/lib/seo';
+
+export const dynamic = 'force-dynamic';
+
+export const metadata: Metadata = {
+    title: 'Latest news and guides',
+    description: siteConfig.description,
+    alternates: {
+        canonical: absoluteUrl('/'),
+    },
+    openGraph: {
+        url: absoluteUrl('/'),
+        title: siteConfig.name,
+        description: siteConfig.description,
+    },
+};
 
 export default async function BlogPage() {
     const Blog = await getBlogModel();
@@ -15,7 +32,7 @@ export default async function BlogPage() {
                     <div className="grid gap-6">
                         {posts.length === 0 ? (
                             <div className="rounded-3xl border border-white/10 bg-slate-950/70 p-10 text-center text-slate-400">
-                                No posts available yet. Create the first post in the blog database.sss
+                                No posts available yet. Create the first post in the blog database.
                             </div>
                         ) : (
                             posts.map((post: any) => (

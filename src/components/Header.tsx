@@ -8,8 +8,8 @@ export default function Header() {
                     Carnobon Blog
                 </Link>
                 <nav className="flex items-center gap-4 text-sm text-slate-600">
-                    <Link href="/" className="transition hover:text-slate-900">Home</Link>
-                    <Link href="/" className="transition hover:text-slate-900">Blog</Link>
+                    <Link href="/tags/crypto" className="transition hover:text-slate-900">Crypto</Link>
+                    <Link href="/tags/environment" className="transition hover:text-slate-900">Environment</Link>
                 </nav>
             </div>
         </header>
